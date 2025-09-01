@@ -1,0 +1,125 @@
+/* General CSS styles for the whole page */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f5f5f5;
+    /* Light gray background color */
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    min-height: 100vh;
+    /* Make the page height equal to the screen height */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styles for the registration card (the white box) */
+.register-card {
+    background-color: #ffffff;
+    /* White background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Light box shadow */
+    width: 100%;
+    max-width: 450px;
+    /* Maximum width of the card */
+    padding: 40px;
+    text-align: right;
+    /* To make the text start from the right side */
+}
+
+/* Styles for the "Sign Up" heading */
+.register-card h2 {
+    font-size: 2em;
+    /* Font size is twice the natural size */
+    font-weight: 700;
+    /* Bold font */
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    /* To keep the heading on the left side */
+}
+
+/* Styles for the form group (label and input) */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Styles for the field labels (e.g., Full Name) */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9em;
+    text-align: left;
+    /* To keep the field label on the left side */
+}
+
+/* Styles for the input fields */
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    box-sizing: border-box;
+    /* To ensure the width includes padding and border */
+    transition: border-color 0.3s ease;
+    /* Add a smooth transition effect on focus */
+}
+
+/* Styles for the input fields when they are in focus (when clicked inside) */
+.form-group input:focus {
+    outline: none;
+    border-color: #010101;
+    /* Border color turns black */
+}
+
+/* Styles for the "REGISTER" button */
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(85, 207, 169);
+    /* Teal background color */
+    color: #333;
+    /* Black text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover effect for the "REGISTER" button */
+.register-btn:hover {
+    background-color: #006666;
+    /* Darker color on hover */
+    color: #fff;
+}
+
+/* Styles for the "Log In" link to return to the sign-in page */
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Styles for the "Log In" link text */
+.login-link a {
+    color: rgb(85, 207, 169);
+    /* Teal link color */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover effect for the "Log In" link */
+.login-link a:hover {
+    text-decoration: underline;
+}
