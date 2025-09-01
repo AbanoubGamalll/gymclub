@@ -1,13 +1,12 @@
-.headerbody{
+.headerbody {
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-
+    padding: 0 10%; /* يمين وشمال */
     box-shadow: 0 3px 3px #55cfa9;
 }
+
 li > a {
     text-decoration: none;
     color: black;
@@ -15,9 +14,24 @@ li > a {
     font-size: large; 
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
-    &:hover{
-        background-color: #55CFA9;
-        color: white;
-        border-radius: 5px;
+}
+
+li > a:hover {
+    background-color: #55CFA9;
+    color: white;
+    border-radius: 5px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .headerbody {
+        flex-direction: column;   /* القوائم تبقى تحت بعض */
+        padding: 10px;
+    }
+
+    li > a {
+        display: block;          /* يخلي اللينكات تاخد عرض كامل */
+        text-align: center;
+        padding: 10px;
     }
 }

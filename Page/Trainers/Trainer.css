@@ -1,10 +1,9 @@
-
 /* General CSS styles for the whole page */
 body {
     font-family: 'Cairo', sans-serif;
     background-color: white;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +13,7 @@ body {
 .trainers-header {
     text-align: center;
     margin-bottom: 40px;
+    padding: 0 10px; /* عشان الموبايل النص مايلزقش في الحواف */
 }
 
 .trainers-header h2 {
@@ -31,7 +31,7 @@ body {
 /* Styles for the main trainers grid */
 .trainers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* خليتها 250 عشان تناسب الموبايل */
     gap: 20px;
     max-width: 1200px;
     width: 100%;
@@ -48,7 +48,6 @@ body {
     position: relative;
 }
 
-/* Hover effect for trainer cards */
 .trainer-card:hover {
     transform: translateY(-5px);
 }
@@ -120,4 +119,32 @@ body {
 .social-icons a:hover {
     background-color: #ffffff;
     color: rgb(85, 207, 169);
+}
+
+/* ========================= */
+/* 📱 Media Queries للموبايل */
+/* ========================= */
+@media (max-width: 768px) {
+    .trainers-header h2 {
+        font-size: 1.8em; /* تصغير العنوان للموبايل */
+    }
+
+    .trainer-info h3 {
+        font-size: 1em;
+    }
+
+    .trainer-info p {
+        font-size: 0.8em;
+    }
+
+    .social-icons {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 1em;
+    }
 }
