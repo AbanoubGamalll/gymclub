@@ -4,175 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Page/Menus/global.css">
+    <link rel="stylesheet" href="pricing.css">
+
     <title>Our Pricing</title>
-
-    <style>
-        
-/* General CSS styles for the whole page */
-    body {
-        font-family: 'Cairo', sans-serif;
-        background-color: white;
-        margin: 0px;
-        padding: 0px;
-        
-    }
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-/* Styles for the trainers header */
-.trainers-header {
-    margin-bottom: 40px;
-}
-
-.trainers-header h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    color: rgb(85, 207, 169);
-    margin-bottom: 10px;
-}
-
-.trainers-header .icon {
-    color: rgb(85, 207, 169);
-    font-size: 1.5em;
-}
-
-/* Styles for the main trainers grid */
-.trainers-grid {
-    padding: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-}
-.trainers-grid .first{
-    background-color: #f8f8f8;
-   
-}
-.trainers-grid .first h2{
-     font-family: 'Cairo', sans-serif;
-    margin: 0 0 5px 0;
-    color: #333;
-}
-.trainers-grid .second{
-    background-color: #424243;
-    color: white;
-}
-.trainers-grid .second h2{
-    font-family: 'Cairo', sans-serif;
-    margin: 0 0 5px 0;
-    color: white;
-}
-/* Styles for each trainer card */
-.trainer-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    position: relative;
-    padding: 35px;
-
-}
-
-/* Hover effect for trainer cards */
-.trainer-card:hover {
-    transform: translateY(-5px);
-}
-
-.trainer-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Styles for the text overlay at the bottom of the card */
-.trainer-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 15px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.trainer-card .price-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-}
-.trainer-card .price {
-    font-size: 1.2em;
-    background-color: white;
-    color:#55CFA9;
-    padding: 15px;
-    border-radius: 10px 0px 0px 10px;
-}
-.trainer-card .month {
-    font-size: 1.2em;
-    background-color: #55cfa9;
-    color:white;
-    padding: 15px;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.trainer-info p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9em;
-}
-
-
-    li{
-        padding: 5px 0;
-        font-size: 15px;
-       
-        font-weight: bold;
-        text-align: left;
-    }
-    li::marker{
-        color: #55CFA9;
-        
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-size: large; 
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 15px;
-        border-radius: 5px;
-        text-align: center;
-        display: inline-block;
-        background-color: #55CFA9;
-        border: 2px solid #55CFA9;
-            &:hover{
-                background-color: white;
-                color:#55CFA9;
-                border-radius: 5px;
-            }
-        }
-
-    </style>
 
 </head>
 <body>
     <iframe class="headerStyle" src="/Page/Menus/Header.html"></iframe>
-    
+    <div>
     <div class="page-header">
         <h2>OUR PRICING</h2>
         <div class="icon">
             <i><img src="/Img/minilogo.png" alt=""></i>
         </div>
     
-        
     <div class="trainers-grid">
         <div class="trainer-card first">
             <h2>Basic Plan</h2>
@@ -233,7 +78,7 @@
         </div>
         
     </div>
-        
+        </div>
     <iframe class="footerStyle" src="/Page/Menus/Footer.html"></iframe>
 </body>
 </html>

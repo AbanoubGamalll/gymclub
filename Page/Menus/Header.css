@@ -14,7 +14,9 @@ li > a {
     font-size: large; 
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
+
 }
+
 
 li > a:hover {
     background-color: #55CFA9;
@@ -22,15 +24,17 @@ li > a:hover {
     border-radius: 5px;
 }
 
-/* 📱 Responsive */
+
+
+    
 @media (max-width: 768px) {
     .headerbody {
-        flex-direction: column;   /* القوائم تبقى تحت بعض */
+        flex-direction: column;   
         padding: 10px;
     }
 
     li > a {
-        display: block;          /* يخلي اللينكات تاخد عرض كامل */
+        display: block;
         text-align: center;
         padding: 10px;
     }

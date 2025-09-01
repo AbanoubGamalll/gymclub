@@ -6,20 +6,23 @@
     --light-bg: #FFFFFF;
     --section-bg: #F8F9FA;
 }
-
 body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.main {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--light-bg);
-    margin: 0;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-     background-image: url(/Img/bg.jpg);
-     background-size: cover;
+    background-image: url(/Img/bg.jpg);
+    background-size: cover;
 }
-body::before {
+.main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -75,6 +78,7 @@ body::before {
 
 /* Classes Slider */
 .classes-slider {
+    margin: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +111,7 @@ body::before {
 
 /* Class Card Styling */
 .class-card {
+
     background-color: var(--light-bg);
     border-radius: 15px;
     overflow: hidden;

@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML Only Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Example</title>
+  <style>
+    /* Basic header style */
+    header {
+      background: #222;
+      padding: 15px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effect */
+    header nav a:hover {
+      color: orange;
+    }
+
+    /* Active link style */
+    header nav a.active {
+      color: yellow; /* Highlighted color for current page */
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <marquee behavior="scroll" direction="left" scrollamount="10">
-    <img src="https://picsum.photos/id/1018/400/250" alt="Image 1">
-    <img src="https://picsum.photos/id/1025/400/250" alt="Image 2">
-    <img src="https://picsum.photos/id/1039/400/250" alt="Image 3">
-    <img src="https://picsum.photos/id/1043/400/250" alt="Image 4">
-  </marquee>
+
+<header>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
 </body>
 </html>
