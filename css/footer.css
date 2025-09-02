@@ -41,7 +41,7 @@ span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../Img/footer-back-img.jpg) no-repeat center/cover;
+  background: url(../img/footer-back-img.jpg) no-repeat center/cover;
   filter: blur(3px) brightness(0.25);
   z-index: -1;
 }
