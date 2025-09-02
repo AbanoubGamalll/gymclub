@@ -1,8 +1,8 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -71,6 +71,8 @@ span {
   margin: 0;
   font-size: 13px;
   padding: 5px;
+      text-align: center;
+
 }
 
 input[type="submit"] {

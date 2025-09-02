@@ -1,12 +1,9 @@
 body {
-  margin: 0px;
-  padding: 0px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 100%;
 }
 .main {
   font-family: "Cairo", sans-serif;

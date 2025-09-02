@@ -1,7 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -47,7 +44,6 @@ a.join-btn:hover {
   color: #55cfa9;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .banner h1 {
     font-size: 2rem;
@@ -60,11 +56,5 @@ a.join-btn:hover {
   a.join-btn {
     font-size: 1rem;
     padding: 10px 20px;
-  }
-
-  iframe {
-    width: 100%;
-    min-height: 80px;
-    border: none;
   }
 }
