@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-shadow: 0px -5px 25px #55cfa9;
+}
+
+img {
+  width: 75px;
+  height: auto;
+}
+
+span {
+  padding: 25px;
+}
+
+.first {
+  flex: 1;
+  position: relative;
+  min-height: 120px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.first::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../Img/footer-back-img.jpg) no-repeat center/cover;
+  filter: blur(3px) brightness(0.25);
+  z-index: -1;
+}
+
+.first-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 8px;
+  color: white;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.first-contact:hover {
+  color: #55cfa9;
+}
+
+.second {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #55cfa9;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  font-size: 13px; /* خط أصغر */
+  padding: 5px;
+}
+/* فورم */
+input[type="submit"] {
+  background-color: #55cfa9;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="email"] {
+  color: #55cfa9;
+  padding: 10px;
+  border: 1px solid #55cfa9;
+}
+
+.img-contact {
+  width: 25px;
+  padding-right: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .first {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .first-contact {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  .second {
+    font-size: 14px;
+  }
+}
