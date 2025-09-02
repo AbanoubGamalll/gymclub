@@ -8,8 +8,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0px;
-    background-image: url(/Img/bg.jpg);
-background-size: cover;
 }
 
 .login-card {
