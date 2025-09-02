@@ -69,10 +69,10 @@ span {
   color: white;
   font-weight: bold;
   margin: 0;
-  font-size: 13px; /* خط أصغر */
+  font-size: 13px;
   padding: 5px;
 }
-/* فورم */
+
 input[type="submit"] {
   background-color: #55cfa9;
   color: white;
@@ -92,16 +92,9 @@ input[type="email"] {
   padding-right: 10px;
 }
 
-/* 📱 Responsive */
 @media (max-width: 768px) {
   .first {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .first-contact {
-    justify-content: center;
-    padding-bottom: 15px;
+    display: none;
   }
 
   .second {

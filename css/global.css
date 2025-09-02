@@ -33,3 +33,11 @@ iframe {
   color: rgb(85, 207, 169);
   font-size: 1.5em;
 }
+@media (max-width: 768px) {
+  .headerStyle {
+    height: none;
+  }
+  .footerStyle {
+    height: 0px;
+  }
+}
