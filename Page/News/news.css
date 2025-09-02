@@ -14,18 +14,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 
 /* Latest News Section */
 .latest-news {
+    margin-bottom: 30px;
     width: 100%;
     max-width: 1140px;
     text-align: center;
-}
-
-.section-header {
-    margin-bottom: 40px;
 }
 
 .section-header h2 {
@@ -143,6 +139,8 @@ body {
 
 /* Join Today Section */
 .join-today {
+    margin-bottom: 30px;
+
     width: 100%;
     max-width: 960px;
     background-color: var(--dark-blue);
