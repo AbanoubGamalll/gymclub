@@ -7,7 +7,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 /* بنر */
 .banner {
-background-image: url(/Img/banner-img.jpg);
+background-image: url(./Img/banner-img.jpg);
 background-size: cover;
 background-position: center;
 min-height: 100vh; /* يخليها تاخد طول الشاشة */
@@ -65,7 +65,7 @@ color: #55cfa9;
 
   iframe {
   width: 100%;
-  min-height: 80px; /* الهيدر والفوتر يظبطوا */
+  min-height: 80px; 
   border: none;
   }
 }
